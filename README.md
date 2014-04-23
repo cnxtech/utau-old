@@ -1,6 +1,6 @@
-# [ZeroToHero](https://github.com/hinshun/zerotohero)
+# [UTAU](https://github.com/hinshun/utau)
 
-ZeroToHero is the theme for personal blog and portfolio, created and maintained with ♥ by Edgar Lee. The blog runs on the [Ghost](https://github.com/TryGhost/Ghost) platform, which is also open source. Feel free to look around the theme files which is available to anyone who wants to use it (at your own expense).
+UTAU is the theme for personal blog and portfolio, created and maintained with by Edgar Lee. The blog runs on the [Ghost](https://github.com/TryGhost/Ghost) platform, which is also open source. Feel free to look around the theme files which is available to anyone who wants to use it (at your own expense).
 
 ## Copyright & License
 
