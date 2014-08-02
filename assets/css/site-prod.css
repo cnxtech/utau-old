@@ -392,32 +392,12 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     display: table;
     width: 100%;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-shadow: 1px 1px 0 #000;
     color: #fff;
-    background: #000 no-repeat center center;
+    background: url('../img/blog-bg-1.jpg') no-repeat center center;
     background-size: cover;
-    transition: background 1.5s ease-in-out;
-}
-
-/* CSS Image Preloader */
-body:after {
-    display: none;
-    content: url('../img/blog-bg1.jpg') url('../img/blog-bg2.jpg');
-}
-
-.site-head.bg-0 {
-    background-image: url('../img/blog-bg0.jpg');
-}
-
-.site-head.bg-1 {
-    background-image: url('../img/blog-bg1.jpg');
-}
-
-.site-head.bg-2 {
-    background-position-y: 20%;
-    background-image: url('../img/blog-bg2.jpg');
 }
 
 .site-head a {
@@ -620,7 +600,7 @@ body:after {
 
 .blog-description {
     margin-top: 10px;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     line-height: 1.5em;
     font-weight: 300;
     text-transform: uppercase;

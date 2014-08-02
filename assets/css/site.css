@@ -397,28 +397,8 @@ margin on the iframe, cause it breaks stuff. */
     text-align: center;
     text-shadow: 1px 1px 0 #000;
     color: #fff;
-    background: #000 no-repeat center center;
+    background: url('../img/bg_default.jpg') no-repeat center center;
     background-size: cover;
-    transition: background 1.5s ease-in-out;
-}
-
-/* CSS Image Preloader */
-body:after {
-    display: none;
-    content: url('../img/blog-bg1.jpg') url('../img/blog-bg2.jpg');
-}
-
-.site-head.bg-0 {
-    background-image: url('../img/blog-bg0.jpg');
-}
-
-.site-head.bg-1 {
-    background-image: url('../img/blog-bg1.jpg');
-}
-
-.site-head.bg-2 {
-    background-position-y: 20%;
-    background-image: url('../img/blog-bg2.jpg');
 }
 
 .site-head a {
