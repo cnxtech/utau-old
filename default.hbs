@@ -34,24 +34,29 @@
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-
 <body class="{{body_class}}">
     <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-    {{! The big featured header on the homepage, with the site logo and description }}
     {{> header}}
 
     <section class="site-content" id="content">
         {{#if true}}<div class="site-affiliates">
-            <div class="site-affiliates-title animated fadeIn">UTAU Partners</div>
-            <a href="http://www.rocsaut.ca/"><img class="site-affiliate rocsaut animated bounceIn" src="{{asset "img/rocsaut.png"}}"></img></a>
-            <a href="https://www.facebook.com/uoft.utkcc"><img class="site-affiliate utkcc animated bounceIn" src="{{asset "img/utkcc.jpg"}}"></img></a>
-            <a href="http://utvsa.sa.utoronto.ca/"><img class="site-affiliate uvsa animated bounceIn" src="{{asset "img/uvsa.jpg"}}"></img></a>
-            <a href="http://aiesec.ca/"><img class="site-affiliate aiesec animated bounceIn" src="{{asset "img/aiesec.png"}}"></img></a>
-            <a href="http://eassu.sa.utoronto.ca/"><img class="site-affiliate eassu animated bounceIn" src="{{asset "img/eassu.jpg"}}"></img></a>
-            <a href="http://utcassu.com/"><img class="site-affiliate cassu animated bounceIn" src="{{asset "img/cassu.png"}}"></img></a>
-            <a href="http://socialspark.com/"><img class="site-affiliate socialspark animated bounceIn" src="{{asset "img/socialspark.jpg"}}"></img></a>
-            <a href="https://www.facebook.com/pages/utcva/129733323811463"><img class="site-affiliate utcva animated bounceIn" src="{{asset "img/utcva.jpg"}}"></img></a>
+            <div class="site-affiliates-title">UTAU Partners</div>
+            <a href="http://www.rocsaut.ca/"><img class="site-affiliate rocsaut" src="{{asset "img/rocsaut.png"}}"></img></a>
+            <a href="https://www.facebook.com/uoft.utkcc"><img class="site-affiliate utkcc" src="{{asset "img/utkcc.jpg"}}"></img></a>
+            <a href="http://utvsa.sa.utoronto.ca/"><img class="site-affiliate uvsa" src="{{asset "img/uvsa.jpg"}}"></img></a>
+            <a href="http://aiesec.ca/"><img class="site-affiliate aiesec" src="{{asset "img/aiesec.png"}}"></img></a>
+            <a href="http://eassu.sa.utoronto.ca/"><img class="site-affiliate eassu" src="{{asset "img/eassu.jpg"}}"></img></a>
+            <a href="http://utcassu.com/"><img class="site-affiliate cassu" src="{{asset "img/cassu.png"}}"></img></a>
+            <a href="http://socialspark.com/"><img class="site-affiliate socialspark" src="{{asset "img/socialspark.jpg"}}"></img></a>
+            <a href="https://www.facebook.com/pages/utcva/129733323811463"><img class="site-affiliate utcva" src="{{asset "img/utcva.jpg"}}"></img></a>
         </div>
         {{/if}}
         {{{body}}}

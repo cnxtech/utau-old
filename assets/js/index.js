@@ -14,14 +14,23 @@ var $header = $('#site-mini-header');
 
     $(document).ready(function(){
 
-        /* Facebook Feed API */
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=386043438147984";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+        $('#btn-get-to-know-us').click(function() {
+          $('#get-to-know-us').show();
+          $('#our-team').hide();
+          $('#founders-letter').hide();
+        });
+
+        $('#btn-our-team').click(function() {
+          $('#get-to-know-us').hide();
+          $('#our-team').show();
+          $('#founders-letter').hide();
+        });
+
+        $('#btn-founders-letter').click(function() {
+          $('#get-to-know-us').hide();
+          $('#our-team').hide();
+          $('#founders-letter').show();
+        });
 
         function initializeBanner() {
             var i = 1;
@@ -76,14 +85,14 @@ var $header = $('#site-mini-header');
 
         function createThumbnail() {
             function createImg(src, el) {
-                $('<div class="widget-recent-posts-image pull-left"><div class="widget-cover-figure"><div class="widget-cover-img" style="background-image:url('+src+');"></div></div></div>').prependTo(el);
+                $('<div class="widget-rss-feed-image pull-left"><div class="widget-cover-figure"><div class="widget-cover-img" style="background-image:url('+src+');"></div></div></div>').prependTo(el);
             }
 
             function createNoImg(el, imgdefault) {
-                $('<div class="widget-recent-posts-image pull-left"><div class="widget-cover-figure" style="background: #68757C;"><div class="widget-cover-img"><i class="fa '+imgdefault+'"></i></div></div></div>').prependTo(el);
+                $('<div class="widget-rss-feed-image pull-left"><div class="widget-cover-figure" style="background: #68757C;"><div class="widget-cover-img"><i class="fa '+imgdefault+'"></i></div></div></div>').prependTo(el);
             }
 
-            $('.widget-recent-posts').each(function() {
+            $('.widget-rss-feed').each(function() {
                 var firstImg = $(this).find('img:first-of-type');
                 var firstImgSrc = firstImg.attr('src');
 
@@ -99,13 +108,7 @@ var $header = $('#site-mini-header');
         function generateThumbnail() {
             var numpost = Math.min(5, $('.post').length);
 
-            var $tag = $('.tag-archive-header');
-
-            var rssInit = "http://demo.janniskev.in/ghost/revision";
-            if ($tag.length > 0) {
-                rssInit += "/tag/" + $tag.find('h1')[0].innerHTML;
-            }
-            rssInit += "/rss";
+            var rssInit = "http://utau.ghost.io/tag/events/rss";
 
             $parseRSS({
                 count: numpost,
@@ -118,8 +121,8 @@ var $header = $('#site-mini-header');
                         var title = posts[i].title;
                         var date = posts[i].publishedDate;
 
-                        code += '<div class="widget-recent-posts">';
-                        code += '<div class="widget-recent-posts-text pull-left">';
+                        code += '<div class="widget-rss-feed">';
+                        code += '<div class="widget-rss-feed-text pull-left">';
                         code += '<a href="'+link+'">'+title+'</a>';
                         code += '<p>'+Date.create(date).relative()+'</p>';
                         code += '<div class="post-content">'+full+'</div>';
@@ -128,7 +131,7 @@ var $header = $('#site-mini-header');
                         code += '</div>';
                     }
                   
-                    $("#recent-posts").html(code);
+                    $("#rss-feed").html(code);
 
                     createThumbnail();
                     $('.widget-content .post-content').remove();

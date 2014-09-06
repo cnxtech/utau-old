@@ -389,23 +389,69 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Big cover image on the home page */
 .site-head {
-    position: relative;
-    display: table;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    text-shadow: 1px 1px 0 #000;
-    color: #fff;
-    background: url('../img/blog-bg-1.jpg') no-repeat center center;
-    background-size: cover;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #fff;
+}
+
+.site-head-content {
+  height: 400px;
+  background: url('../img/silhouette.png') no-repeat left center;
+}
+
+.site-head-brand {
+  position: absolute;
+  width: 550px;
+  top: 70px;
+  left: 180px;
+}
+
+.blog-logo img {
+    float: left;
+    max-height: 100px;
+    width: auto;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+.blog-logo:hover {
+  text-decoration: none;
+}
+
+.university-of-toronto, .asian-union {
+  font-family: 'Gill Sans';
+  text-transform: uppercase;
+}
+
+.university-of-toronto {
+  margin-top: 8px;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+.asian-union {
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  line-height: 50px;
+}
+
+.site-head-links {
+  position: absolute;
+  font-size: 20px;
+  top: 78px;
+  right: 135px;
+}
+
+.site-head-links a {
+  margin-right: 18px;
 }
 
 .site-head a {
     color: inherit;
-}
-
-.site-head-content {
-    margin-top: 60px;
 }
 
 .site-nav {
@@ -431,33 +477,37 @@ margin on the iframe, cause it breaks stuff. */
     display: block;
 }
 
+.site-mini-header-wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 .site-mini-home {
-    position: absolute;
-    left: 30px;
-    top: 4px;
+  float: left;
+  margin-top: 4px;
 }
 
 .site-mini-home:hover {
-    text-decoration: none;
-    color: #428bca;
+  text-decoration: none;
+  color: #428bca;
 }
 
 .site-mini-logo {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .site-mini-title {
-    margin-left: 5px;
+  margin-left: 25px;
 }
 
 .site-mini-nav {
-    display: inline-block;
+  float: right;
+  margin-right: 25px;
 }
 
 .site-mini-links {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -490,11 +540,9 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .site-mini-social {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-
-    font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  font-size: 20px;
 }
 
 .site-mini-social a {
@@ -580,35 +628,6 @@ margin on the iframe, cause it breaks stuff. */
     margin-top: 50px;
 }
 
-/* Main Header */
-
-.blog-logo {
-    -webkit-animation-delay: 150ms;
-    animation-delay: 150ms;
-}
-
-/* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
-.blog-logo img {
-    max-height: 100px;
-    width: auto;
-    margin: 0 auto;
-    line-height: 0;
-    box-shadow: 1px 1px 1px #000;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-}
-
-.blog-description {
-    margin-top: 10px;
-    font-size: 2.0rem;
-    line-height: 1.5em;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    -webkit-animation-delay: 250ms;
-    animation-delay: 250ms;
-}
-
 .blog-social {
     display: inline-block;
     margin: 20px 4px 0;
@@ -659,7 +678,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .blog-nav {
-    margin: 0 auto;
+    float: right;
     font-size: 20px;
     font-size: 2rem;
     font-weight: 300;
@@ -1027,6 +1046,72 @@ margin on the iframe, cause it breaks stuff. */
     color: #50585D;
 }
 
+/* ==========================================================================
+   5. About Us
+   ========================================================================== */
+
+about-us {
+  background-color: #a80006;
+}
+
+.about-us-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-us-links li {
+  padding: 10px 0px;
+  border-bottom: 1px solid #bbb;
+  font-size: 18px;
+  color: #666;
+}
+
+.about-us-links li:hover {
+  color: #a80006;
+}
+
+.about-us-links li:last-child {
+  border-bottom: none;
+}
+
+.about-us-links li .glyphicon {
+  margin-right: 15px;
+}
+
+.profile-card {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.profile-card img {
+  height: 175px;
+  width: 175px;
+  margin-bottom: 16px;
+}
+
+.profile-card-name,
+.profile-card-position,
+.profile-card-year {
+  line-height: 22px;
+}
+
+.profile-card-name {
+  font-weight: bold;
+}
+
+#our-team,
+#founders-letter {
+  display: none;
+}
+
+/* ==========================================================================
+   5. Under Construction
+   ========================================================================== */
+
+#under-construction {
+  margin-bottom: 30px;
+}
 
 /* ==========================================================================
    5. Tag archive
@@ -1291,7 +1376,7 @@ margin on the iframe, cause it breaks stuff. */
     margin-right: 5px;
 }
 
-#recent-posts {
+#rss-feed {
     margin-top: 10px;
     padding: 7px 20px;
 }
@@ -1300,19 +1385,19 @@ margin on the iframe, cause it breaks stuff. */
     border-bottom: 3px solid #0057a8;
 }
 
-#widget-recent-posts-wrapper {
+#widget-rss-feed-wrapper {
     margin-bottom:-6px;
     margin-top:-1px;
 }
 
-.widget-recent-posts {
+.widget-rss-feed {
     margin-bottom:17px;
     margin-left:-1px;
     margin-top:3px;
     margin-right:-17px;
 }
 
-.widget-recent-posts-image {
+.widget-rss-feed-image {
     margin-right: 10px;
     margin-top:1px;
     width:89px;
@@ -1340,36 +1425,28 @@ margin on the iframe, cause it breaks stuff. */
     color:#fff;
 }
 
-.widget-recent-posts-text {
+.widget-rss-feed-text {
     width: 55%;
 }
 
-.widget-recent-posts-text a {
+.widget-rss-feed-text a {
     font-size: 14px;
     line-height: 10px;
 }
 
-.widget-recent-posts-text a:hover {
+.widget-rss-feed-text a:hover {
     color: #ccc;
 }
 
-.widget-recent-posts-text p {
+.widget-rss-feed-text p {
     margin:2px 0px 0px;
     font-size: 13px;
     color: #444;
 }
 
-#facebook-page {
-    width: 262px;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 13px 0 19px;
+.fb-like-box iframe {
+  background-color: #fff;
 }
-
-#facebook-page iframe {
-    height: 320px !important;
-}
-
 
 /* ==========================================================================
    End of file. Media queries should be the last thing here. Do not add stuff
