@@ -558,11 +558,19 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Site Affiliates */
 .site-affiliates {
-    width: 100%;
     background: #fff;
     border-bottom: 1px solid #ccc;
     padding: 10px 20px;
     text-align: center;
+}
+
+.site-affliates-wrapper {
+    margin: 0 auto;
+    width: 1140px;
+    height: 128px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .site-affiliates-title {
@@ -571,7 +579,6 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.2rem;
     text-transform: uppercase;
     -webkit-animation-delay: 1000ms;
-    animation-delay: 1000ms;
 }
 
 .site-affiliate {
@@ -581,47 +588,24 @@ margin on the iframe, cause it breaks stuff. */
     margin-bottom: 5px;
 }
 
-.site-affiliate.rocsaut {
-    -webkit-animation-delay: 400ms;
-    animation-delay: 400ms;
-}
-
-.site-affiliate.utkcc {
-    -webkit-animation-delay: 450ms;
-    animation-delay: 450ms;
-}
-
 .site-affiliate.uvsa {
     width: 90px;
-    -webkit-animation-delay: 500ms;
-    animation-delay: 500ms;
 }
 
 .site-affiliate.aiesec {
     width: 150px;
-    -webkit-animation-delay: 550ms;
-    animation-delay: 550ms;
 }
 
 .site-affiliate.eassu {
     width: 60px;
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600ms;
 }
 
-.site-affiliate.cassu {
-    -webkit-animation-delay: 650ms;
-    animation-delay: 650ms;
+.site-affiliate.chinacare {
+  width: 150px;
 }
 
-.site-affiliate.socialspark {
-    -webkit-animation-delay: 700ms;
-    animation-delay: 700ms;
-}
-
-.site-affiliate.utcva {
-    -webkit-animation-delay: 750ms;
-    animation-delay: 750ms;
+.site-affiliate.utja {
+  width: 150px;
 }
 
 .site-content .container {
@@ -786,6 +770,10 @@ margin on the iframe, cause it breaks stuff. */
     border: 1px solid #dfdfdf;
     border-top: 0px;
     border-bottom:0px;
+}
+
+.post-content .fluid-width-video-wrapper {
+    margin-bottom: 20px;
 }
 
 .post-excerpt,

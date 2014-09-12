@@ -13,6 +13,21 @@ var $header = $('#site-mini-header');
     "use strict";
 
     $(document).ready(function(){
+        $('#success').hide();
+
+        $('form#subscribe').submit(function (e) {
+          e.preventDefault();
+          $.getJSON(
+          this.action + "?callback=?",
+          $(this).serialize(),
+          function (data) {
+            if (data.Status === 400) {
+            } else { // 200
+              $('#success').fadeIn(500);
+              $('#subscribe').hide();
+            }
+          });
+        });
 
         $('#btn-get-to-know-us').click(function() {
           $('#get-to-know-us').show();
