@@ -1,7 +1,20 @@
 # [UTAU](https://github.com/hinshun/utau)
 
-UTAU is the theme for student organization [UTAU](http://www.utau.ca), created by Edgar Lee. The blog runs on the [Ghost](https://github.com/TryGhost/Ghost) platform, which is also open source. Feel free to look around the theme files which is available to anyone who wants to use it (at your own expense).
+UTAU is a [Ghost blog](http://www.ghost.org) theme for student club University
+of Toronto Asians' Union.
 
-## Copyright & License
+## Libraries
 
-Copyright (c) 2014 Edgar Lee - Released under the [MIT license](LICENSE).
+* [Bootstrap](http://getbootstrap.com)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome)
+* [HTML5Shiv](https://github.com/aFarkas/html5shiv)
+* [FitVids.js](https://github.com/davatron5000/FitVids.js)
+* [Parserss](https://bitbucket.org/GloverDonovan/jquery-parserss)
+* [Respond.js](https://github.com/scottjehl/Respond)
+* [Sugar.js](https://github.com/andrewplummer/Sugar)
+
+## Contributing
+
+Anyone and everyone is welcome to contribute to UTAU. Just open a pull request
+and I will gladly review it.
+
