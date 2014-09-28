@@ -1,7 +1,7 @@
 # [UTAU](https://github.com/hinshun/utau)
 
-UTAU is a [Ghost blog](http://www.ghost.org) theme for student club University
-of Toronto Asians' Union.
+UTAU is a [Ghost](http://www.ghost.org) theme for student club University
+of Toronto Asians' Union blog and website.
 
 ## Libraries
 
