@@ -420,7 +420,8 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .university-of-toronto, .asian-union {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: "Lato";
+  font-weight: 300;
   text-transform: uppercase;
 }
 
