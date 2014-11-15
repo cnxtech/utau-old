@@ -211,6 +211,7 @@ var $header = $('#site-mini-header');
         initializeCalendar();
 
         $(".post-content").fitVids();
+        $(".post-featured iframe").fitVids();
 
         // Generate Recent Post thumbnails
         generateThumbnail();
