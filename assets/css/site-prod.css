@@ -420,7 +420,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .university-of-toronto, .asian-union {
-  font-family: "Lato";
+  font-family: "Lato", Calibri, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -607,10 +607,6 @@ margin on the iframe, cause it breaks stuff. */
 
 .site-affiliate.utja {
   width: 150px;
-}
-
-.site-affiliate.utsmssa {
-  width: 50px;
 }
 
 .site-content .container {
@@ -1099,6 +1095,14 @@ about-us {
 }
 
 /* ==========================================================================
+   5. Calendar
+   ========================================================================== */
+
+.calendar-wrap {
+  height: 650px;
+}
+
+/* ==========================================================================
    5. Under Construction
    ========================================================================== */
 
@@ -1125,10 +1129,10 @@ about-us {
 }
 
 .tag-archive-header {
-    padding: 20px 0;
+    padding: 0;
     text-align: center;
     max-width: 700px;
-    margin: 4rem auto;
+    margin: 2rem auto;
     border-bottom: 1px solid #EBF2F6;
     position: relative;
 }
@@ -1136,6 +1140,41 @@ about-us {
 .archive-template .blog-title {
     display: inline-block;
     padding: 2.5rem 0;
+}
+
+/* ==========================================================================
+   5. Tag Three Columns
+   ========================================================================== */
+
+.tag-get-to-know .container {
+  width: 90%;
+}
+
+.tag-post-wrapper article.post {
+  display: inline-block;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  padding: 15px;
+  padding-bottom: 5px;
+  width: 33%;
+}
+
+.tag-post-wrapper .post-meta time {
+  font-size: 1.2rem;
+}
+
+.tag-post-wrapper .post-excerpt {
+  font-size: 1.4rem;
+}
+
+.tag-post-columns {
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-gap: 15px;
+  column-fill: auto;
 }
 
 /* ==========================================================================
